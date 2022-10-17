@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 
 import net.gaelgg.api.entity.Album;
 import net.gaelgg.api.repository.AlbumsRepository;
-import net.gaelgg.api.service.IAlbumService;
+import net.gaelgg.api.service.IAlbumsService;
 
 @Service
-public class AlbumService implements IAlbumService {
+public class AlbumsService implements IAlbumsService {
     @Autowired
 	private AlbumsRepository repoAlbums;
 	

@@ -4,7 +4,7 @@ import java.util.List;
 
 import net.gaelgg.api.entity.Album;
 
-public interface IAlbumService {
+public interface IAlbumsService {
 
 	List<Album> buscarTodos();
 }
