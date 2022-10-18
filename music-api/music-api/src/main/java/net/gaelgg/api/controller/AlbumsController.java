@@ -27,6 +27,23 @@ public class AlbumsController {
 	public List<Album> buscarTodos(){
 		return serviceAlbums.buscarTodos();
 	}
+	@PostMapping("/albums") 
+	public Album guardar(@RequestBody Album album) {
+		serviceAlbums.guardar(album);
+		return album;
+	}
+	
+	@PutMapping("/albums")
+	public Album modificar(@RequestBody Album album) {
+		serviceAlbums.guardar(album);
+		return album;
+	} 
+	
+	@DeleteMapping("/albums/{id}")
+	public String eliminar(@PathVariable("id") int idAlbum) {
+		serviceAlbums.eliminar(idAlbum);
+		return "Registro Eliminado";
+	}
 	
 
 }
